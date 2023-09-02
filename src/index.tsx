@@ -1,27 +1,28 @@
-import { ActionPanel, Action, List, Icon, Color } from "@raycast/api";
+import { ActionPanel, Action, List, Icon } from "@raycast/api";
+import getIcon from "./utils/icon";
 import data from "./data";
 
 export default function Command() {
-  // REDIRECT to default example if there is one
-  const defaultExample = data.filter((item) => item.default);
-  if (defaultExample.length > 0) return defaultExample[0].target;
-
   return (
     <List>
-      {data.map((item) => (
-        <List.Item
-          key={item.title}
-          icon={item.icon ? { source: item.icon, tintColor: Color.SecondaryText } : Icon.Dot}
-          title={item.title}
-          subtitle={item.subtitle}
-          accessories={[{ icon: { source: Icon.Dot, tintColor: "raycast-green" }, tooltip: "Ready to check!" }]}
-          actions={
-            <ActionPanel>
-              <Action.Push title="View" icon={Icon.Eye} target={item.target} />
-            </ActionPanel>
-          }
-        />
-      ))}
+      <List.Section title="Gallery" subtitle={`${data.length} examples`}>
+        {data.map(({ icon, title, subtitle, target }) => {
+          return (
+            <List.Item
+              key={title}
+              icon={getIcon({ name: icon })}
+              title={title}
+              subtitle={subtitle}
+              accessories={[{ icon: { source: Icon.Dot, tintColor: "raycast-green" }, tooltip: "Ready to check!" }]}
+              actions={
+                <ActionPanel>
+                  <Action.Push title="View" icon={Icon.Eye} target={target} />
+                </ActionPanel>
+              }
+            />
+          );
+        })}
+      </List.Section>
     </List>
   );
 }

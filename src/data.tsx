@@ -1,5 +1,3 @@
-import { Icon } from "@raycast/api";
-
 import Grid from "./gallery/grid";
 import ActionPush from "./gallery/action-push";
 import SuccessFailure from "./gallery/show-toast";
@@ -12,68 +10,58 @@ import OpenFile from "./gallery/open-file";
 type Example = {
   title: string;
   subtitle: string;
-  tags?: string[];
   target: JSX.Element;
+  icon: string;
   default?: boolean;
-  icon?: Icon;
-  wip?: boolean;
 };
 
 const data: Example[] = [
   {
     title: "Grid",
     subtitle: "Some cool ways to use the Grids",
-    tags: ["Grid", "Grid.Item", "Grid.Section"],
-    icon: Icon.AppWindowGrid2x2,
+    icon: "AppWindowGrid2x2",
     target: <Grid />,
   },
   {
     title: "Action Push",
     subtitle: "Use to navigate to another view",
-    tags: ["Action", "Action.Push"],
-    icon: Icon.ArrowUp,
+    icon: "ArrowUp",
     target: <ActionPush />,
   },
   {
     title: "Show Toast",
     subtitle: "Notification with a message",
-    tags: ["async", "Toast", "showToast"],
-    icon: Icon.Bell,
+    icon: "Bell",
     target: <SuccessFailure />,
   },
   {
     title: "Empty view",
     subtitle: "When no items to show",
-    tags: ["EmptyView", "Grid", "List"],
-    icon: Icon.XMarkCircle,
+    icon: "XMarkCircle",
     target: <EmptyView />,
   },
   {
     title: "Accesories",
     subtitle: "Different types of accesories",
-    tags: ["Icon", "Tag", "List.Item"],
-    icon: Icon.SquareEllipsis,
+    icon: "SquareEllipsis",
     target: <Accesories />,
   },
   {
     title: "Loading",
     subtitle: "When loading items",
-    tags: ["loading", "Grid", "List"],
-    icon: Icon.Hourglass,
+    icon: "Hourglass",
     target: <Loading />,
   },
   {
     title: "Typeahead Results",
     subtitle: "Filtering results from a typeahead",
-    tags: ["useFetch", "Fech"],
-    icon: Icon.MagnifyingGlass,
+    icon: "MagnifyingGlass",
     target: <TypeaheadResults />,
   },
   {
     title: "Open file",
     subtitle: "Open a file with the default application",
-    tags: ["getDefaultApplication", "OpenWith"],
-    icon: Icon.CodeBlock,
+    icon: "CodeBlock",
     target: <OpenFile />,
   },
 ];

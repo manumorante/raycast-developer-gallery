@@ -1,20 +1,6 @@
-import { Grid, Color, Icon } from "@raycast/api";
+import { Grid, Color, Icon, ActionPanel } from "@raycast/api";
 import randomImage from "../utils/randomImage";
 import ActionPanelCode from "../utils/ActionPanelCode";
-
-const Section2Columns = () => {
-  const actions = ActionPanelCode([
-    { title: "2 Columns Grid", code: `<Grid.Section columns={2} aspectRatio="16/9" fit={Grid.Fit.Fill}>` },
-    { title: "Item Grid", code: `<Grid.Item content={randomImage(16, 9)} />` },
-  ]);
-
-  return (
-    <Grid.Section columns={2} aspectRatio="16/9" fit={Grid.Fit.Fill}>
-      <Grid.Item content={{ source: randomImage(16, 9) }} actions={actions} />
-      <Grid.Item content={{ source: randomImage(16, 9) }} actions={actions} />
-    </Grid.Section>
-  );
-};
 
 type Movie = {
   id?: number;
@@ -31,6 +17,22 @@ const movies: Movie[] = [
   { title: "Inception", year: "2010" },
 ];
 
+const Section2Columns = () => {
+  const actions = ActionPanelCode({
+    items: [
+      { title: "2 Columns Grid", code: `<Grid.Section columns={2} aspectRatio="16/9" fit={Grid.Fit.Fill}>` },
+      { title: "Item Grid", code: `<Grid.Item content={randomImage(16, 9)} />` },
+    ],
+  });
+
+  return (
+    <Grid.Section columns={2} aspectRatio="16/9" fit={Grid.Fit.Fill}>
+      <Grid.Item content={{ source: randomImage(16, 9) }} actions={<ActionPanel>{actions}</ActionPanel>} />
+      <Grid.Item content={{ source: randomImage(16, 9) }} actions={<ActionPanel>{actions}</ActionPanel>} />
+    </Grid.Section>
+  );
+};
+
 const Section6Columns = () => {
   const columnsGridCode = `<Grid.Section title="Movies" columns={6} aspectRatio="2/3" fit={Grid.Fit.Fill}>`;
   const itemGridCode = `<Grid.Item content={randomImage(2, 3)} title={movie.title} subtitle={movie.year.toString()} />`;
@@ -43,10 +45,16 @@ const Section6Columns = () => {
           content={randomImage(2, 3)}
           title={title}
           subtitle={year.toString()}
-          actions={ActionPanelCode([
-            { title: "6 Columns Grid", code: columnsGridCode },
-            { title: "Item Grid", code: itemGridCode },
-          ])}
+          actions={
+            <ActionPanel>
+              {ActionPanelCode({
+                items: [
+                  { title: "6 Columns Grid", code: columnsGridCode },
+                  { title: "Item Grid", code: itemGridCode },
+                ],
+              })}
+            </ActionPanel>
+          }
         />
       ))}
     </Grid.Section>
@@ -63,13 +71,19 @@ const SectionColors = () => {
             key={key}
             content={{ color: value }}
             title={key}
-            actions={ActionPanelCode([
-              { title: "8 Color Columns", code: `<Grid.Section title="Colors" columns={8} aspectRatio="1">` },
-              {
-                title: "Item Grid",
-                code: `<Grid.Item content={{ color: value }} title={key} />`,
-              },
-            ])}
+            actions={
+              <ActionPanel>
+                {ActionPanelCode({
+                  items: [
+                    { title: "8 Color Columns", code: `<Grid.Section title="Colors" columns={8} aspectRatio="1">` },
+                    {
+                      title: "Item Grid",
+                      code: `<Grid.Item content={{ color: value }} title={key} />`,
+                    },
+                  ],
+                })}
+              </ActionPanel>
+            }
           />
         ))}
     </Grid.Section>
@@ -86,16 +100,22 @@ const SectionIcons = () => {
             key={key}
             content={{ source: value }}
             title={key}
-            actions={ActionPanelCode([
-              {
-                title: "8 Icon Columns",
-                code: `<Grid.Section title="Icons" columns={8} aspectRatio="1" inset={Grid.Inset.Large}>`,
-              },
-              {
-                title: "Item Grid",
-                code: `<Grid.Item content={{ source: value }} title={key} />`,
-              },
-            ])}
+            actions={
+              <ActionPanel>
+                {ActionPanelCode({
+                  items: [
+                    {
+                      title: "8 Icon Columns",
+                      code: `<Grid.Section title="Icons" columns={8} aspectRatio="1" inset={Grid.Inset.Large}>`,
+                    },
+                    {
+                      title: "Item Grid",
+                      code: `<Grid.Item content={{ source: value }} title={key} />`,
+                    },
+                  ],
+                })}
+              </ActionPanel>
+            }
           />
         ))}
     </Grid.Section>

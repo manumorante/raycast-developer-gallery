@@ -56,7 +56,7 @@ export default function Command() {
       {data.map((item, index) => (
         <List.Item
           key={index}
-          icon={{ source: Icon.Code, tintColor: Color.SecondaryText, tooltip: JSON.stringify(item.accessories) }}
+          icon={{ source: Icon.Dot, tintColor: Color.SecondaryText, tooltip: JSON.stringify(item.accessories) }}
           title={item.title}
           accessories={item.accessories}
           actions={

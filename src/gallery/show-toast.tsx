@@ -1,5 +1,6 @@
 import { ActionPanel, Action, List, showToast, Toast } from "@raycast/api";
 import { useEffect, useState } from "react";
+import ActionPanelCode from "../utils/ActionPanelCode";
 
 export default function Command() {
   const [state, setState] = useState({ success: false, message: "" });
@@ -36,6 +37,7 @@ export default function Command() {
         actions={
           <ActionPanel>
             <Action title="View" onAction={() => setState({ success: true, message: "Pizza margherita is ready!" })} />
+            <ActionPanelCode items={[{ title: "Toast", code: `hola` }]} />
           </ActionPanel>
         }
       />
