@@ -14,7 +14,7 @@ export default function Command() {
           icon={item.icon ? { source: item.icon, tintColor: Color.SecondaryText } : Icon.Dot}
           title={item.title}
           subtitle={item.subtitle}
-          accessories={item.tags?.map((tag) => ({ tag }))}
+          accessories={[{ icon: { source: Icon.Dot, tintColor: "raycast-green" }, tooltip: "Ready to check!" }]}
           actions={
             <ActionPanel>
               <Action.Push title="View" icon={Icon.Eye} target={item.target} />

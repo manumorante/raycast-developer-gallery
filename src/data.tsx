@@ -7,6 +7,7 @@ import EmptyView from "./gallery/empty-view";
 import Loading from "./gallery/loading";
 import Accesories from "./gallery/accesories";
 import TypeaheadResults from "./gallery/typeahead-results";
+import OpenFile from "./gallery/open-file";
 
 type Example = {
   title: string;
@@ -51,7 +52,7 @@ const data: Example[] = [
     title: "Accesories",
     subtitle: "Different types of accesories",
     tags: ["Icon", "Tag", "List.Item"],
-    icon: Icon.Ellipsis,
+    icon: Icon.SquareEllipsis,
     target: <Accesories />,
   },
   {
@@ -67,6 +68,13 @@ const data: Example[] = [
     tags: ["useFetch", "Fech"],
     icon: Icon.MagnifyingGlass,
     target: <TypeaheadResults />,
+  },
+  {
+    title: "Open file",
+    subtitle: "Open a file with the default application",
+    tags: ["getDefaultApplication", "OpenWith"],
+    icon: Icon.CodeBlock,
+    target: <OpenFile />,
   },
 ];
 

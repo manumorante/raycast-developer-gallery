@@ -3,7 +3,7 @@
   "name": "raycast-developer-gallery",
   "title": "Raycast Developer Gallery",
   "description": "Examples and howtos for Raycast extension development.",
-  "icon": "♾️",
+  "icon": "icon.png",
   "author": "manumorante",
   "categories": [
     "Productivity",
@@ -16,6 +16,18 @@
       "title": "Search examples",
       "description": "Search for developer examples in the gallery.",
       "mode": "view"
+    },
+    {
+      "name": "uppercase-selected-text",
+      "title": "Uppercase selected text",
+      "description": "Get the selected text and convert it to uppercase and paste it.",
+      "mode": "no-view"
+    },
+    {
+      "name": "paste-time-no-view-mode",
+      "title": "Paste time no-view mode",
+      "description": "An example of a command that does not have a view mode.",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
