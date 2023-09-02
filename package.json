@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "developer-kit",
-  "title": "Developer Kit",
-  "description": "Donde hacer pruebas y reutilizar código.",
+  "name": "raycast-developer-gallery",
+  "title": "Raycast Developer Gallery",
+  "description": "Examples and howtos for Raycast extension development.",
   "icon": "♾️",
   "author": "manumorante",
   "categories": [
@@ -13,8 +13,8 @@
   "commands": [
     {
       "name": "index",
-      "title": "Gallery",
-      "description": "List of examples",
+      "title": "Search examples",
+      "description": "Search for developer examples in the gallery.",
       "mode": "view"
     }
   ],
