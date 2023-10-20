@@ -12,8 +12,8 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Search examples",
+      "name": "gallery",
+      "title": "Gallery",
       "description": "Search for developer examples in the gallery.",
       "mode": "view"
     },
@@ -28,11 +28,18 @@
       "title": "Paste time no-view mode",
       "description": "An example of a command that does not have a view mode.",
       "mode": "no-view"
+    },
+    {
+      "name": "todo",
+      "title": "Todo",
+      "description": "Todo tasks list",
+      "mode": "view"
     }
   ],
   "dependencies": {
     "@raycast/api": "^1.50.0",
-    "@raycast/utils": "^1.4.8"
+    "@raycast/utils": "^1.4.8",
+    "nanoid": "^3.3.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.5",
