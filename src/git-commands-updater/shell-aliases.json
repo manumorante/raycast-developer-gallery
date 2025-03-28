@@ -1,0 +1,830 @@
+[
+  {
+    "name": "g",
+    "command": "git"
+  },
+  {
+    "name": "ga",
+    "command": "git add"
+  },
+  {
+    "name": "gaa",
+    "command": "git add --all"
+  },
+  {
+    "name": "gam",
+    "command": "git am"
+  },
+  {
+    "name": "gama",
+    "command": "git am --abort"
+  },
+  {
+    "name": "gamc",
+    "command": "git am --continue"
+  },
+  {
+    "name": "gams",
+    "command": "git am --skip"
+  },
+  {
+    "name": "gamscp",
+    "command": "git am --show-current-patch"
+  },
+  {
+    "name": "gap",
+    "command": "git apply"
+  },
+  {
+    "name": "gapa",
+    "command": "git add --patch"
+  },
+  {
+    "name": "gapt",
+    "command": "git apply --3way"
+  },
+  {
+    "name": "gau",
+    "command": "git add --update"
+  },
+  {
+    "name": "gav",
+    "command": "git add --verbose"
+  },
+  {
+    "name": "gb",
+    "command": "git branch"
+  },
+  {
+    "name": "gbD",
+    "command": "git branch --delete --force"
+  },
+  {
+    "name": "gba",
+    "command": "git branch --all"
+  },
+  {
+    "name": "gbd",
+    "command": "git branch --delete"
+  },
+  {
+    "name": "gbg",
+    "command": "LANG=C git branch -vv | grep \": gone\\]\""
+  },
+  {
+    "name": "gbgD",
+    "command": "LANG=C git branch --no-color -vv | grep \": gone\\]\" | cut -c 3- | awk '\\''{print $1}'\\'' | xargs git branch -D"
+  },
+  {
+    "name": "gbgd",
+    "command": "LANG=C git branch --no-color -vv | grep \": gone\\]\" | cut -c 3- | awk '\\''{print $1}'\\'' | xargs git branch -d"
+  },
+  {
+    "name": "gbl",
+    "command": "git blame -w"
+  },
+  {
+    "name": "gbm",
+    "command": "git branch --move"
+  },
+  {
+    "name": "gbnm",
+    "command": "git branch --no-merged"
+  },
+  {
+    "name": "gbr",
+    "command": "git branch --remote"
+  },
+  {
+    "name": "gbs",
+    "command": "git bisect"
+  },
+  {
+    "name": "gbsb",
+    "command": "git bisect bad"
+  },
+  {
+    "name": "gbsg",
+    "command": "git bisect good"
+  },
+  {
+    "name": "gbsn",
+    "command": "git bisect new"
+  },
+  {
+    "name": "gbso",
+    "command": "git bisect old"
+  },
+  {
+    "name": "gbsr",
+    "command": "git bisect reset"
+  },
+  {
+    "name": "gbss",
+    "command": "git bisect start"
+  },
+  {
+    "name": "gc",
+    "command": "git commit --verbose"
+  },
+  {
+    "name": "gc!",
+    "command": "git commit --verbose --amend"
+  },
+  {
+    "name": "gcB",
+    "command": "git checkout -B"
+  },
+  {
+    "name": "gca",
+    "command": "git commit --verbose --all"
+  },
+  {
+    "name": "gca!",
+    "command": "git commit --verbose --all --amend"
+  },
+  {
+    "name": "gcam",
+    "command": "git commit --all --message"
+  },
+  {
+    "name": "gcan!",
+    "command": "git commit --verbose --all --no-edit --amend"
+  },
+  {
+    "name": "gcann!",
+    "command": "git commit --verbose --all --date=now --no-edit --amend"
+  },
+  {
+    "name": "gcans!",
+    "command": "git commit --verbose --all --signoff --no-edit --amend"
+  },
+  {
+    "name": "gcas",
+    "command": "git commit --all --signoff"
+  },
+  {
+    "name": "gcasm",
+    "command": "git commit --all --signoff --message"
+  },
+  {
+    "name": "gcb",
+    "command": "git checkout -b"
+  },
+  {
+    "name": "gcd",
+    "command": "git checkout $(git_develop_branch)"
+  },
+  {
+    "name": "gcf",
+    "command": "git config --list"
+  },
+  {
+    "name": "gcl",
+    "command": "git clone --recurse-submodules"
+  },
+  {
+    "name": "gclean",
+    "command": "git clean --interactive -d"
+  },
+  {
+    "name": "gclf",
+    "command": "git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules"
+  },
+  {
+    "name": "gcm",
+    "command": "git checkout $(git_main_branch)"
+  },
+  {
+    "name": "gcmsg",
+    "command": "git commit --message"
+  },
+  {
+    "name": "gcn",
+    "command": "git commit --verbose --no-edit"
+  },
+  {
+    "name": "gcn!",
+    "command": "git commit --verbose --no-edit --amend"
+  },
+  {
+    "name": "gco",
+    "command": "git checkout"
+  },
+  {
+    "name": "gcor",
+    "command": "git checkout --recurse-submodules"
+  },
+  {
+    "name": "gcount",
+    "command": "git shortlog --summary --numbered"
+  },
+  {
+    "name": "gcp",
+    "command": "git cherry-pick"
+  },
+  {
+    "name": "gcpa",
+    "command": "git cherry-pick --abort"
+  },
+  {
+    "name": "gcpc",
+    "command": "git cherry-pick --continue"
+  },
+  {
+    "name": "gcs",
+    "command": "git commit --gpg-sign"
+  },
+  {
+    "name": "gcsm",
+    "command": "git commit --signoff --message"
+  },
+  {
+    "name": "gcss",
+    "command": "git commit --gpg-sign --signoff"
+  },
+  {
+    "name": "gcssm",
+    "command": "git commit --gpg-sign --signoff --message"
+  },
+  {
+    "name": "gd",
+    "command": "git diff"
+  },
+  {
+    "name": "gdca",
+    "command": "git diff --cached"
+  },
+  {
+    "name": "gdct",
+    "command": "git describe --tags $(git rev-list --tags --max-count=1)"
+  },
+  {
+    "name": "gdcw",
+    "command": "git diff --cached --word-diff"
+  },
+  {
+    "name": "gds",
+    "command": "git diff --staged"
+  },
+  {
+    "name": "gdt",
+    "command": "git diff-tree --no-commit-id --name-only -r"
+  },
+  {
+    "name": "gdup",
+    "command": "git diff @{upstream}"
+  },
+  {
+    "name": "gdw",
+    "command": "git diff --word-diff"
+  },
+  {
+    "name": "gf",
+    "command": "git fetch"
+  },
+  {
+    "name": "gfa",
+    "command": "git fetch --all --tags --prune --jobs=10"
+  },
+  {
+    "name": "gfg",
+    "command": "git ls-files | grep"
+  },
+  {
+    "name": "gfo",
+    "command": "git fetch origin"
+  },
+  {
+    "name": "gg",
+    "command": "git gui citool"
+  },
+  {
+    "name": "gga",
+    "command": "git gui citool --amend"
+  },
+  {
+    "name": "ggpull",
+    "command": "git pull origin \"$(git_current_branch)\""
+  },
+  {
+    "name": "ggpur",
+    "command": "ggu"
+  },
+  {
+    "name": "ggpush",
+    "command": "git push origin \"$(git_current_branch)\""
+  },
+  {
+    "name": "ggsup",
+    "command": "git branch --set-upstream-to=origin/$(git_current_branch)"
+  },
+  {
+    "name": "ghh",
+    "command": "git help"
+  },
+  {
+    "name": "gignore",
+    "command": "git update-index --assume-unchanged"
+  },
+  {
+    "name": "gignored",
+    "command": "git ls-files -v | grep \"^[[:lower:]]\""
+  },
+  {
+    "name": "git-svn-dcommit-push",
+    "command": "git svn dcommit && git push github $(git_main_branch):svntrunk"
+  },
+  {
+    "name": "gk",
+    "command": "\\gitk --all --branches &!"
+  },
+  {
+    "name": "gke",
+    "command": "\\gitk --all $(git log --walk-reflogs --pretty=%h) &!"
+  },
+  {
+    "name": "gl",
+    "command": "git pull"
+  },
+  {
+    "name": "glg",
+    "command": "git log --stat"
+  },
+  {
+    "name": "glgg",
+    "command": "git log --graph"
+  },
+  {
+    "name": "glgga",
+    "command": "git log --graph --decorate --all"
+  },
+  {
+    "name": "glgm",
+    "command": "git log --graph --max-count=10"
+  },
+  {
+    "name": "glgp",
+    "command": "git log --stat --patch"
+  },
+  {
+    "name": "glo",
+    "command": "git log --oneline --decorate"
+  },
+  {
+    "name": "glod",
+    "command": "git log --graph --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\""
+  },
+  {
+    "name": "glods",
+    "command": "git log --graph --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\" --date=short"
+  },
+  {
+    "name": "glog",
+    "command": "git log --oneline --decorate --graph"
+  },
+  {
+    "name": "gloga",
+    "command": "git log --oneline --decorate --graph --all"
+  },
+  {
+    "name": "glol",
+    "command": "git log --graph --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\""
+  },
+  {
+    "name": "glola",
+    "command": "git log --graph --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\" --all"
+  },
+  {
+    "name": "glols",
+    "command": "git log --graph --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\" --stat"
+  },
+  {
+    "name": "glp",
+    "command": "_git_log_prettily"
+  },
+  {
+    "name": "gluc",
+    "command": "git pull upstream $(git_current_branch)"
+  },
+  {
+    "name": "glum",
+    "command": "git pull upstream $(git_main_branch)"
+  },
+  {
+    "name": "gm",
+    "command": "git merge"
+  },
+  {
+    "name": "gma",
+    "command": "git merge --abort"
+  },
+  {
+    "name": "gmc",
+    "command": "git merge --continue"
+  },
+  {
+    "name": "gmff",
+    "command": "git merge --ff-only"
+  },
+  {
+    "name": "gmom",
+    "command": "git merge origin/$(git_main_branch)"
+  },
+  {
+    "name": "gms",
+    "command": "git merge --squash"
+  },
+  {
+    "name": "gmtl",
+    "command": "git mergetool --no-prompt"
+  },
+  {
+    "name": "gmtlvim",
+    "command": "git mergetool --no-prompt --tool=vimdiff"
+  },
+  {
+    "name": "gmum",
+    "command": "git merge upstream/$(git_main_branch)"
+  },
+  {
+    "name": "gp",
+    "command": "git push"
+  },
+  {
+    "name": "gpd",
+    "command": "git push --dry-run"
+  },
+  {
+    "name": "gpf",
+    "command": "git push --force-with-lease --force-if-includes"
+  },
+  {
+    "name": "gpf!",
+    "command": "git push --force"
+  },
+  {
+    "name": "gpoat",
+    "command": "git push origin --all && git push origin --tags"
+  },
+  {
+    "name": "gpod",
+    "command": "git push origin --delete"
+  },
+  {
+    "name": "gpr",
+    "command": "git pull --rebase"
+  },
+  {
+    "name": "gpra",
+    "command": "git pull --rebase --autostash"
+  },
+  {
+    "name": "gprav",
+    "command": "git pull --rebase --autostash -v"
+  },
+  {
+    "name": "gpristine",
+    "command": "git reset --hard && git clean --force -dfx"
+  },
+  {
+    "name": "gprom",
+    "command": "git pull --rebase origin $(git_main_branch)"
+  },
+  {
+    "name": "gpromi",
+    "command": "git pull --rebase=interactive origin $(git_main_branch)"
+  },
+  {
+    "name": "gprum",
+    "command": "git pull --rebase upstream $(git_main_branch)"
+  },
+  {
+    "name": "gprumi",
+    "command": "git pull --rebase=interactive upstream $(git_main_branch)"
+  },
+  {
+    "name": "gprv",
+    "command": "git pull --rebase -v"
+  },
+  {
+    "name": "gpsup",
+    "command": "git push --set-upstream origin $(git_current_branch)"
+  },
+  {
+    "name": "gpsupf",
+    "command": "git push --set-upstream origin $(git_current_branch) --force-with-lease --force-if-includes"
+  },
+  {
+    "name": "gpu",
+    "command": "git push upstream"
+  },
+  {
+    "name": "gpv",
+    "command": "git push --verbose"
+  },
+  {
+    "name": "gr",
+    "command": "git remote"
+  },
+  {
+    "name": "gra",
+    "command": "git remote add"
+  },
+  {
+    "name": "grb",
+    "command": "git rebase"
+  },
+  {
+    "name": "grba",
+    "command": "git rebase --abort"
+  },
+  {
+    "name": "grbc",
+    "command": "git rebase --continue"
+  },
+  {
+    "name": "grbd",
+    "command": "git rebase $(git_develop_branch)"
+  },
+  {
+    "name": "grbi",
+    "command": "git rebase --interactive"
+  },
+  {
+    "name": "grbm",
+    "command": "git rebase $(git_main_branch)"
+  },
+  {
+    "name": "grbo",
+    "command": "git rebase --onto"
+  },
+  {
+    "name": "grbom",
+    "command": "git rebase origin/$(git_main_branch)"
+  },
+  {
+    "name": "grbs",
+    "command": "git rebase --skip"
+  },
+  {
+    "name": "grbum",
+    "command": "git rebase upstream/$(git_main_branch)"
+  },
+  {
+    "name": "grep",
+    "command": "grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.venv,venv}"
+  },
+  {
+    "name": "grev",
+    "command": "git revert"
+  },
+  {
+    "name": "greva",
+    "command": "git revert --abort"
+  },
+  {
+    "name": "grevc",
+    "command": "git revert --continue"
+  },
+  {
+    "name": "grf",
+    "command": "git reflog"
+  },
+  {
+    "name": "grh",
+    "command": "git reset"
+  },
+  {
+    "name": "grhh",
+    "command": "git reset --hard"
+  },
+  {
+    "name": "grhk",
+    "command": "git reset --keep"
+  },
+  {
+    "name": "grhs",
+    "command": "git reset --soft"
+  },
+  {
+    "name": "grm",
+    "command": "git rm"
+  },
+  {
+    "name": "grmc",
+    "command": "git rm --cached"
+  },
+  {
+    "name": "grmv",
+    "command": "git remote rename"
+  },
+  {
+    "name": "groh",
+    "command": "git reset origin/$(git_current_branch) --hard"
+  },
+  {
+    "name": "grrm",
+    "command": "git remote remove"
+  },
+  {
+    "name": "grs",
+    "command": "git restore"
+  },
+  {
+    "name": "grset",
+    "command": "git remote set-url"
+  },
+  {
+    "name": "grss",
+    "command": "git restore --source"
+  },
+  {
+    "name": "grst",
+    "command": "git restore --staged"
+  },
+  {
+    "name": "grt",
+    "command": "cd \"$(git rev-parse --show-toplevel || echo .)\""
+  },
+  {
+    "name": "gru",
+    "command": "git reset --"
+  },
+  {
+    "name": "grup",
+    "command": "git remote update"
+  },
+  {
+    "name": "grv",
+    "command": "git remote --verbose"
+  },
+  {
+    "name": "gsb",
+    "command": "git status --short --branch"
+  },
+  {
+    "name": "gsd",
+    "command": "git svn dcommit"
+  },
+  {
+    "name": "gsh",
+    "command": "git show"
+  },
+  {
+    "name": "gsi",
+    "command": "git submodule init"
+  },
+  {
+    "name": "gsps",
+    "command": "git show --pretty=short --show-signature"
+  },
+  {
+    "name": "gsr",
+    "command": "git svn rebase"
+  },
+  {
+    "name": "gss",
+    "command": "git status --short"
+  },
+  {
+    "name": "gst",
+    "command": "git status"
+  },
+  {
+    "name": "gsta",
+    "command": "git stash push"
+  },
+  {
+    "name": "gstaa",
+    "command": "git stash apply"
+  },
+  {
+    "name": "gstall",
+    "command": "git stash --all"
+  },
+  {
+    "name": "gstc",
+    "command": "git stash clear"
+  },
+  {
+    "name": "gstd",
+    "command": "git stash drop"
+  },
+  {
+    "name": "gstl",
+    "command": "git stash list"
+  },
+  {
+    "name": "gstp",
+    "command": "git stash pop"
+  },
+  {
+    "name": "gsts",
+    "command": "git stash show --patch"
+  },
+  {
+    "name": "gstu",
+    "command": "gsta --include-untracked"
+  },
+  {
+    "name": "gsu",
+    "command": "git submodule update"
+  },
+  {
+    "name": "gsw",
+    "command": "git switch"
+  },
+  {
+    "name": "gswc",
+    "command": "git switch --create"
+  },
+  {
+    "name": "gswd",
+    "command": "git switch $(git_develop_branch)"
+  },
+  {
+    "name": "gswm",
+    "command": "git switch $(git_main_branch)"
+  },
+  {
+    "name": "gta",
+    "command": "git tag --annotate"
+  },
+  {
+    "name": "gtl",
+    "command": "gtl(){ git tag --sort=-v:refname -n --list \"${1}*\" }; noglob gtl"
+  },
+  {
+    "name": "gts",
+    "command": "git tag --sign"
+  },
+  {
+    "name": "gtv",
+    "command": "git tag | sort -V"
+  },
+  {
+    "name": "gunignore",
+    "command": "git update-index --no-assume-unchanged"
+  },
+  {
+    "name": "gunwip",
+    "command": "git rev-list --max-count=1 --format=\"%s\" HEAD | grep -q \"\\--wip--\" && git reset HEAD~1"
+  },
+  {
+    "name": "gup",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gup%F{yellow}\\' is a deprecated alias, using \\'%F{green}gpr%F{yellow}\\' instead.%f\"\\n    gpr'"
+  },
+  {
+    "name": "gupa",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gupa%F{yellow}\\' is a deprecated alias, using \\'%F{green}gpra%F{yellow}\\' instead.%f\"\\n    gpra'"
+  },
+  {
+    "name": "gupav",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gupav%F{yellow}\\' is a deprecated alias, using \\'%F{green}gprav%F{yellow}\\' instead.%f\"\\n    gprav'"
+  },
+  {
+    "name": "gupom",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gupom%F{yellow}\\' is a deprecated alias, using \\'%F{green}gprom%F{yellow}\\' instead.%f\"\\n    gprom'"
+  },
+  {
+    "name": "gupomi",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gupomi%F{yellow}\\' is a deprecated alias, using \\'%F{green}gpromi%F{yellow}\\' instead.%f\"\\n    gpromi'"
+  },
+  {
+    "name": "gupv",
+    "command": "$'\\n    print -Pu2 \"%F{yellow}[oh-my-zsh] \\'%F{red}gupv%F{yellow}\\' is a deprecated alias, using \\'%F{green}gprv%F{yellow}\\' instead.%f\"\\n    gprv'"
+  },
+  {
+    "name": "gwch",
+    "command": "git whatchanged -p --abbrev-commit --pretty=medium"
+  },
+  {
+    "name": "gwip",
+    "command": "git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message \"--wip-- [skip ci]\""
+  },
+  {
+    "name": "gwipe",
+    "command": "git reset --hard && git clean --force -df"
+  },
+  {
+    "name": "gwt",
+    "command": "git worktree"
+  },
+  {
+    "name": "gwta",
+    "command": "git worktree add"
+  },
+  {
+    "name": "gwtls",
+    "command": "git worktree list"
+  },
+  {
+    "name": "gwtmv",
+    "command": "git worktree move"
+  },
+  {
+    "name": "gwtrm",
+    "command": "git worktree remove"
+  }
+]
