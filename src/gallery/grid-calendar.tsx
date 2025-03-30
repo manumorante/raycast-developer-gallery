@@ -1,4 +1,4 @@
-import { Grid, Color, Icon, ActionPanel } from "@raycast/api";
+import { Grid, Icon } from "@raycast/api";
 
 /**
  * 0 - Domingo

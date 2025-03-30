@@ -1,34 +1,36 @@
 # Git Commands
 
-Directorio que contiene alias y utilidades de Git para Raycast Developer Gallery.
+Directory containing Git aliases and utilities for Raycast Developer Gallery.
 
-## Archivos
+## Files
 
-- `aliases.json`: Lista completa de alias de Git
-- `shell-aliases.json`: Alias específicos del shell
-- `update.js`: Script para actualizar los alias
-- `utils/`: Funciones de utilidad
+- `aliases.json`: Complete list of Git aliases
+- `shell-aliases.json`: Shell-specific aliases
+- `update.js`: Script to update aliases
+- `utils/`: Utility functions
 
-## Proceso de Actualización
+## Update Process
 
-El script `update.js` sigue estos pasos:
+The `update.js` script follows these steps:
 
-1. Obtiene los alias actuales del shell y los guarda
-2. Crea una copia local del archivo principal
-3. Compara y fusiona los alias
-4. Muestra un resumen de los cambios
+1. Gets current shell aliases and saves them
+2. Creates a local copy of the main file
+3. Compares and merges aliases
+4. Shows a summary of changes
 
-## Uso
+## Usage
 
-Este módulo:
-- Estandariza operaciones de Git
-- Proporciona atajos de comandos
-- Mantiene un repositorio centralizado de alias
+This module:
+
+- Standardizes Git operations
+- Provides command shortcuts
+- Maintains a centralized repository of aliases
 
 ## Structure
 
 The module is organized into two main JSON files:
+
 1. `aliases.json`: Contains the core Git command aliases
 2. `shell-aliases.json`: Contains shell-specific variations of the Git commands
 
-The `update.js` script is responsible for maintaining and updating these alias files. 
+The `update.js` script is responsible for maintaining and updating these alias files.
