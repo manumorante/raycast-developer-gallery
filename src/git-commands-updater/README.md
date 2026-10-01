@@ -1,14 +1,5 @@
 # Git Commands
 
-Directory containing Git aliases and utilities for Raycast Developer Gallery.
-
-## Files
-
-- `aliases.json`: Complete list of Git aliases
-- `shell-aliases.json`: Shell-specific aliases
-- `update.js`: Script to update aliases
-- `utils/`: Utility functions
-
 ## Update Process
 
 The `update.js` script follows these steps:

@@ -1417,23 +1417,33 @@
     },
     {
       "name": "gclf",
-      "command": "git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules"
+      "command": "git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules",
+      "type": "default",
+      "description": "Clone a repository with filtered submodules to exclude blob objects."
     },
     {
       "name": "gmff",
-      "command": "git merge --ff-only"
+      "command": "git merge --ff-only",
+      "type": "default",
+      "description": "Merge a branch only if it can be fast-forwarded."
     },
     {
       "name": "gprum",
-      "command": "git pull --rebase upstream $(git_main_branch)"
+      "command": "git pull --rebase upstream $(git_main_branch)",
+      "type": "default",
+      "description": "Pull and rebase the main branch from upstream."
     },
     {
       "name": "gprumi",
-      "command": "git pull --rebase=interactive upstream $(git_main_branch)"
+      "command": "git pull --rebase=interactive upstream $(git_main_branch)",
+      "type": "default",
+      "description": "Pull and interactively rebase the main branch from upstream."
     },
     {
       "name": "grbum",
-      "command": "git rebase upstream/$(git_main_branch)"
+      "command": "git rebase upstream/$(git_main_branch)",
+      "type": "default",
+      "description": "Rebase the current branch onto the upstream main branch."
     }
   ]
 }

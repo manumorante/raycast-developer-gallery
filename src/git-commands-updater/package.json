@@ -1,10 +1,19 @@
 {
   "name": "git-commands-updater",
   "version": "1.0.0",
+  "description": "Herramienta para gestionar y actualizar alias de comandos Git",
   "type": "module",
-  "description": "Git commands updater",
   "main": "update.js",
   "scripts": {
-    "start": "node update.js"
-  }
+    "start": "node update.js",
+    "update": "node update.js"
+  },
+  "keywords": [
+    "git",
+    "aliases",
+    "raycast",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT"
 }
